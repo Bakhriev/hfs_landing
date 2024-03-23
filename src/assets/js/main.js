@@ -18,7 +18,7 @@ new TransferElements({
 });
 
 const menuToggle = document.querySelector('.menu-toggle');
-const headerNav = document.querySelector('.header__nav-mobile');
+const headerNav = document.querySelector('.mobile-nav');
 const menuToggleBurger = menuToggle.querySelector('.burger');
 const body = document.body;
 
@@ -27,4 +27,18 @@ menuToggle.addEventListener('click', () => {
 	menuToggle.classList.toggle('active');
 	menuToggleBurger.classList.toggle('active');
 	body.classList.toggle('disable-scroll');
+});
+
+const menuMobileItems = document.querySelectorAll('.menu-mobile-item');
+
+menuMobileItems.forEach(item => {
+	const toggle = item.querySelector('.menu-mobile-item__toggle');
+	const subMenu = item.querySelector('.menu-mobile-item__submenu');
+	toggle.addEventListener('click', () => {
+		if (!subMenu.style.maxHeight) {
+			subMenu.style.maxHeight = subMenu.scrollHeight + 'px';
+		} else {
+			subMenu.style.maxHeight = '';
+		}
+	});
 });
