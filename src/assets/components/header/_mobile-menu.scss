@@ -11,6 +11,8 @@
 		opacity 300ms ease-in-out,
 		visibility 300ms ease-in-out;
 
+	border-radius: 0 0 13px 13px;
+
 	&.active {
 		opacity: 1;
 		visibility: visible;
