@@ -26,7 +26,6 @@ menuToggle.addEventListener('click', () => {
 	headerNav.classList.toggle('active');
 	menuToggle.classList.toggle('active');
 	menuToggleBurger.classList.toggle('active');
-	body.classList.toggle('disable-scroll');
 });
 
 const menuMobileItems = document.querySelectorAll('.menu-mobile-item');
