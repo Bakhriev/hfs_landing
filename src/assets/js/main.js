@@ -10,7 +10,7 @@ menuItems.forEach(item => {
 new TransferElements({
 	sourceElement: document.getElementById('header-cart'),
 	breakpoints: {
-		600: {
+		575: {
 			targetElement: document.querySelector('.header-bot__container'),
 			targetPosition: 3,
 		},

@@ -14,12 +14,14 @@
 		align-items: center;
 		justify-content: center;
 		gap: 32px 100px;
+		border-radius: 0 0 12px 12px;
 	}
 
 	&__support {
 		display: flex;
 		align-items: center;
 		gap: 36px;
+
 		@media screen and (max-width: 575px) {
 			gap: 15px;
 		}
@@ -40,6 +42,10 @@
 		font-size: 17px;
 		color: #4576d4;
 		text-decoration: none;
+		transition: color 300ms ease-in;
+		@include hover {
+			color: var(--white);
+		}
 		@media screen and (max-width: 575px) {
 			font-size: 16px;
 		}
@@ -55,10 +61,17 @@
 		flex-direction: column;
 		.menu {
 			flex-wrap: wrap;
+			@media screen and (max-width: 575px) {
+				flex-direction: column;
+			}
+
 			.menu-item {
 				background-color: transparent;
 				a {
 					color: var(--white);
+					@include hover {
+						color: var(--red);
+					}
 				}
 			}
 		}

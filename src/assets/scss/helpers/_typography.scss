@@ -2,41 +2,52 @@ h1 {
 	font-family: var(--second-family);
 	font-weight: 700;
 	font-size: 56px;
-	line-height: 1.05357;
+	line-height: 1.05;
 	letter-spacing: -0.02em;
-	color: var(--white);
+	color: var(--title);
 }
 h2 {
 	font-family: var(--second-family);
 	font-weight: 700;
 	font-size: 48px;
 	letter-spacing: -0.02em;
-	color: var(--white);
+	color: var(--title);
 }
 h3 {
 	font-family: var(--second-family);
 	font-weight: 700;
 	font-size: 40px;
 	letter-spacing: -0.02em;
-	color: var(--white);
+	color: var(--title);
 }
 h4 {
 	font-family: var(--second-family);
 	font-weight: 700;
 	font-size: 32px;
 	letter-spacing: -0.02em;
-	color: var(--white);
+	color: var(--title);
 }
 h5 {
 	font-family: var(--second-family);
 	font-weight: 700;
 	font-size: 28px;
-	color: var(--white);
+	color: var(--title);
 }
 h6 {
 	font-family: var(--second-family);
 	font-weight: 700;
 	font-size: 24px;
 	text-transform: uppercase;
-	color: var(--white);
+	color: var(--title);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@media screen and (max-width: 575px) {
+		font-size: 32px;
+	}
 }
