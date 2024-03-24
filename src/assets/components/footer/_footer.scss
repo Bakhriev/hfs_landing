@@ -4,17 +4,27 @@
 	&__container {
 	}
 
-	&__top {
+	&__top-container {
+		max-width: 1250px;
+		width: 100%;
+		padding: 0 15px;
+		margin: 0 auto;
+		background: #000d25;
+		border-radius: 0 0 12px 12px;
 		margin-bottom: 36px;
 
 		padding: 24px 15px;
-		background: #000d25;
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
 		gap: 32px 100px;
-		border-radius: 0 0 12px 12px;
+		@media screen and (max-width: 768px) {
+			border-radius: 0;
+		}
+	}
+
+	&__top {
 	}
 
 	&__support {
@@ -53,12 +63,7 @@
 
 	&__bot {
 		padding-bottom: 32px;
-		gap: 24px;
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-		justify-content: center;
-		flex-direction: column;
+
 		.menu {
 			flex-wrap: wrap;
 			@media screen and (max-width: 575px) {
@@ -75,6 +80,14 @@
 				}
 			}
 		}
+	}
+	&__bot-container {
+		gap: 24px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
 	}
 
 	&__copy {
